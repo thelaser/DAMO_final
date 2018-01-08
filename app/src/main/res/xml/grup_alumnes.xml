@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grup-Alumnes>
+    <Grup>DAMO110</Grup>
+    <LlistatAlumnes>
+        <Alumne>100</Alumne>
+        <Alumne>101</Alumne>
+    </LlistatAlumnes>
+    <Grup>REIN110</Grup>
+    <LlistatAlumnes>
+        <Alumne>103</Alumne>
+        <Alumne>104</Alumne>
+    </LlistatAlumnes>
+    <Grup>PACO110</Grup>
+    <LlistatAlumnes>
+        <Alumne>102</Alumne>
+        <Alumne>103</Alumne>
+
+    </LlistatAlumnes>
+</Grup-Alumnes>

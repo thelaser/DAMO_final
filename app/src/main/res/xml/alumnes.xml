@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alumnes>
+    <Alumne>
+        <dni>100</dni>
+        <nom>Adrian</nom>
+    </Alumne>
+    <Alumne>
+        <dni>101</dni>
+        <nom>Pau</nom>
+    </Alumne>
+    <Alumne>
+        <dni>102</dni>
+        <nom>Ilyas</nom>
+    </Alumne>
+    <Alumne>
+        <dni>103</dni>
+        <nom>Raul</nom>
+    </Alumne>
+    <Alumne>
+        <dni>104</dni>
+        <nom>Jordi</nom>
+    </Alumne>
+</Alumnes>

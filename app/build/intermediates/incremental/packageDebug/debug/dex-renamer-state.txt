@@ -1,0 +1,4 @@
+#Mon Jan 08 22:49:54 CET 2018
+base.0=/home/thelaser/MEGA/UNI/Q7/DAMO/Proyecto/DAMO_final/app/build/intermediates/transforms/dexMerger/debug/18
+path.0=classes.dex
+renamed.0=classes.dex

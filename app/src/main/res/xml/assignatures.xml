@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Assignatures>
+    <Assignatura>
+        <nom>Desenvolupament d'aplicacions movils</nom>
+        <acronim>DAMO</acronim>
+    </Assignatura>
+    <Assignatura>
+        <nom>Recuperacio de la informacio</nom>
+        <acronim>REIN</acronim>
+    </Assignatura>
+    <Assignatura>
+        <nom>Estructura de la informacio</nom>
+        <acronim>ESIN</acronim>
+    </Assignatura>
+    <Assignatura>
+        <nom>Paralelisme i concurrencia</nom>
+        <acronim>PACO</acronim>
+    </Assignatura>
+    <Assignatura>
+        <nom>Sistemes operatius distribuits en xarxa</nom>
+        <acronim>SODX</acronim>
+    </Assignatura>
+</Assignatures>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Assignatura_Grup>
+    <Assignatura>DAMO</Assignatura>
+    <LlistatGrups>
+        <Grup>DAMO110</Grup>
+        <Grup>DAMO112</Grup>
+        <Grup>DAMO113</Grup>
+    </LlistatGrups>
+    <Assignatura>REIN</Assignatura>
+    <LlistatGrups>
+        <Grup>REIN110</Grup>
+        <Grup>REIN111</Grup>
+    </LlistatGrups>
+    <Assignatura>PACO</Assignatura>
+    <LlistatGrups>
+        <Grup>PACO110</Grup>
+    </LlistatGrups>
+</Assignatura_Grup>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlideAssignatures">
+
+    <item
+        android:id="@+id/add_assig"
+        android:title="Add_assig"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/add_alumne"
+        android:title="Add_alumne"
+        android:icon="@drawable/ic_menu_white_24dp"
+        android:showAsAction="always"
+        />
+
+
+</menu>

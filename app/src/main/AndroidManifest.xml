@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rauls_000.damo_rollcall">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SlideAssignatures">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddAssignatura" />
+        <activity android:name=".NouAlumne" />
+        <activity android:name=".SessionsGrup" />
+        <activity android:name=".PasarLlista" />
+        <activity android:name=".AddGrup" />
+        <activity android:name=".EditSession"></activity>
+    </application>
+
+</manifest>
