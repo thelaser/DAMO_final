@@ -28,11 +28,12 @@ public class ListAlumneAdapter extends ArrayAdapter{
         assistencies = null;
     }
 
-    // Metode cridat per PassarLlista per poder saber quina assistencia del array estem treballant
+    // Metode cridat per PassarLlista y EditarSessio per poder saber sobre quina assistencia del array estem treballant
     public Alumne getItem(int index) {
         return alumnes.get(index);
     }
 
+    // Metode cridat per PassarLlista y EditarSessio per a pasar al adapter la llista d'assistencies
     public void setAssistencies(ArrayList<Assistencia> assistencies) {
         this.assistencies = assistencies;
     }

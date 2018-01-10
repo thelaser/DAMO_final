@@ -9,6 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Created by rauls_000 on 03/01/2018.
+ */
+
 public class NouAlumne extends Activity {
 
     private EditText dni;
