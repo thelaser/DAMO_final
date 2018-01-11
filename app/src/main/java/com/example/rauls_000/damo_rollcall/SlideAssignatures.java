@@ -47,6 +47,7 @@ public class SlideAssignatures extends FragmentActivity {
     ArrayList<Assignatura> assignatures;
     FragmentManager frag_manager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,13 +65,7 @@ public class SlideAssignatures extends FragmentActivity {
 
         // ESTOS DATOS SE CARGARIAN DANDO A UN BOTON EN LA PANTALLA PRINCIPAL
 
-        carregarAlumnes();
-        carregarAssignatures();
-        carregarGrups();
-        carregarAlumnesGrups();
-        carregarGrupsAssignatura();
-        //carregarSessionsGrup();
-        //carregarAssistencies();
+
 
         // ########################################################################
 
@@ -114,6 +109,11 @@ public class SlideAssignatures extends FragmentActivity {
                 // User chose the "Settings" item, show the app settings UI...
                 Intent intent2 = new Intent(this, NouAlumne.class);
                 startActivity(intent2);
+                return true;
+            case R.id.carregarDades:
+                // User chose the "Settings" item, show the app settings UI...
+                carregarDades();
+                mSlidesPagerAdapter.notifyDataSetChanged();
                 return true;
             default:
                 // If we got here, the user's action was not recognized.
@@ -526,6 +526,20 @@ public class SlideAssignatures extends FragmentActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void carregarDades(){
+        carregarAlumnes();
+        carregarAssignatures();
+        carregarGrups();
+        carregarAlumnesGrups();
+        carregarGrupsAssignatura();
+        //carregarSessionsGrup();
+        //carregarAssistencies();
+    }
+
+    public void Inicialitzar(){
+
     }
 
 }

@@ -176,4 +176,5 @@ public class dbManager {
         values.put("tipusAssistencia", tipusAssistencia);
         database.update("assistencia", values, "idSessio = ? AND idAlumne = ?", new String[]{idSessio, idAlumne});
     }
+
 }

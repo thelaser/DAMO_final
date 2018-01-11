@@ -15,9 +15,15 @@
     <item
         android:id="@+id/add_alumne"
         android:title="Add_alumne"
-        android:icon="@drawable/ic_action_name"
+        android:icon="@drawable/ic_action_load"
         android:showAsAction="always"
         />
 
+    <item
+        android:id="@+id/carregarDades"
+        android:title="Carregar_dades"
+        android:icon="@drawable/ic_action_name"
+        android:showAsAction="always"
+        />
 
 </menu>
