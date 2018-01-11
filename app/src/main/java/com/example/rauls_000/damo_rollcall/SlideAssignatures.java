@@ -69,8 +69,8 @@ public class SlideAssignatures extends FragmentActivity {
         carregarGrups();
         carregarAlumnesGrups();
         carregarGrupsAssignatura();
-        carregarSessionsGrup();
-        carregarAssistencies();
+        //carregarSessionsGrup();
+        //carregarAssistencies();
 
         // ########################################################################
 

@@ -33,7 +33,6 @@ public class SessionsGrup extends Activity {
     protected void onResume() {
         super.onResume();
         resultados = manager.getSessionsGrup(getIntent().getStringExtra("idGrup"));
-        Log.d("RESULTADOS SIZE", String.valueOf(resultados.size()));
         adapterSessions.clear();
         adapterSessions.addAll(resultados);
     }
@@ -44,7 +43,8 @@ public class SessionsGrup extends Activity {
         manager = new dbManager(this);
         resultados = new ArrayList<>();
         resultados = manager.getSessionsGrup(getIntent().getStringExtra("idGrup"));
-        adapterSessions = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_list_item_1, (ArrayList) resultados);
+
+        adapterSessions = new ArrayAdapter<CharSequence>(this, R.layout.sessionsxml, (ArrayList) resultados);
         llistaSessions.setAdapter(adapterSessions);
         llistaSessions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
