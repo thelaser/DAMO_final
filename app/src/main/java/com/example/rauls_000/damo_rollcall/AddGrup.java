@@ -32,15 +32,16 @@ public class AddGrup extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_grup);
+        getActionBar().setTitle(getIntent().getStringExtra("idAssignatura") + ": nou grup");
         inicialitzar();
     }
 
     private void inicialitzar() {
+        manager = new dbManager(this);
         carregarAlumnes();
         afegir_boto = (Button) findViewById(R.id.button_add_gr);
         nomgrup = (EditText) findViewById(R.id.editText);
         llistaAlumSelec = (ListView) findViewById(R.id.llistaAlumSelec);
-        manager = new dbManager(this);
         adapter = new SelectAlumneAdapter(
                 this,
                 (ArrayList) alumnes
@@ -62,20 +63,9 @@ public class AddGrup extends Activity {
     }
 
     private void carregarAlumnes() {
-        Log.d("AddGrup", "Oh, hi Mark");
-        Alumne alumne1 = new Alumne("001", "Adrian");
-        Alumne alumne2 = new Alumne("002", "Pau");
-        Alumne alumne3 = new Alumne("003", "Raul");
-        Alumne alumne4 = new Alumne("004", "Jordi");
-        Alumne alumne5 = new Alumne("005", "Ilyas");
-
         alumnes = new ArrayList<Alumne>();
         alumnes_seleccionats = new ArrayList<Alumne>();
-        alumnes.add(alumne1);
-        alumnes.add(alumne2);
-        alumnes.add(alumne3);
-        alumnes.add(alumne4);
-        alumnes.add(alumne5);
+        alumnes = manager.getAlumes();
     }
 
     private void canviarSelected(int position){

@@ -24,6 +24,7 @@ public class NouAlumne extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nou_alumne);
+        getActionBar().setTitle("Nou alumne");
         inicialitzar();
     }
 
@@ -42,7 +43,7 @@ public class NouAlumne extends Activity {
 
     public void guardarAlumne(String dni, String nom) {
         if(dni.length() != 0 && nom.length() != 0) {
-            manager.insertarAlumneGrup(dni, nom);
+            manager.insertarAlumne(dni, nom);
             onBackPressed();
         }
         else {

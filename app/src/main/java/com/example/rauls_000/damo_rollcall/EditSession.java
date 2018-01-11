@@ -46,6 +46,7 @@ public class EditSession extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pasar_llista);
+        getActionBar().setTitle(getIntent().getStringExtra("idGrup") + ": " + getIntent().getStringExtra("idSessio"));
         inicialitzar();
     }
 

@@ -25,6 +25,7 @@ public class SessionsGrup extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sessions_grup);
+        getActionBar().setTitle(getIntent().getStringExtra("idGrup"));
         inicialitzar();
     }
 

@@ -104,15 +104,20 @@ public class dbManager {
         return numAssignatures;
     }
 
-    public List<String> getAlumesGrup(String idGrup) {
-        List<String> labels = new ArrayList<>();
+    public List<Alumne> getAlumes() {
+        Alumne alumne;
+        List<Alumne> alumnes = new ArrayList<>();
         SQLiteDatabase database = helper.getReadableDatabase();
-        String[] projection = new String[]{"idAlumne"};
-        Cursor cursor = database.query("grup_alumne", projection, "idGrup = ?", new String[]{idGrup}, null, null, null);
-        while (cursor.moveToNext()) {
-            labels.add(cursor.getString(0));
+        Cursor cursor = database.query("alumne", new String[]{"dni", "nom"}, null, null, null, null, null);
+        while(cursor.moveToNext()) {
+            String dni, nom;
+            dni = cursor.getString(0);
+            nom = cursor.getString(1);
+            alumne = new Alumne(dni, nom);
+            alumnes.add(alumne);
         }
-        return labels;
+        Log.d("RESULTAT ALUMNES OBJECTE GRUP", String.valueOf(alumnes.size()));
+        return alumnes;
     }
 
     public List<String> getSessionsGrup(String idGrup) {

@@ -1,7 +1,7 @@
 <resources>
     <string name="drawer_open"></string>
     <string name="drawer_close"></string>
-    <string name="app_name">Passadora_Llista</string>
+    <string name="app_name">Assignatures</string>
     <string name="add_button_assig"> Pulsa per afegir noves assignatures</string>
     <string name="title_section2"> Title2</string>
     <string name="title_section3"> Title3</string>

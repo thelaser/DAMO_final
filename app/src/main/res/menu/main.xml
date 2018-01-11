@@ -15,7 +15,7 @@
     <item
         android:id="@+id/add_alumne"
         android:title="Add_alumne"
-        android:icon="@drawable/ic_menu_white_24dp"
+        android:icon="@drawable/ic_action_name"
         android:showAsAction="always"
         />
 
